@@ -1,0 +1,17 @@
+[package]
+name = "snake686"
+version = "0.1.0"
+edition = "2024"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+opt-level = "z"
+panic = "abort"
+strip = "debuginfo"
+lto = false
+debug = false
+overflow-checks = false
+debug-assertions = false
+codegen-units = 1

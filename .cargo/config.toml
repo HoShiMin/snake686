@@ -1,0 +1,7 @@
+[build]
+target = "i686-unknown-none.json"
+rustflags = ["-C", "jump-tables=no"]
+
+[unstable]
+build-std = ["core"]
+json-target-spec = true
